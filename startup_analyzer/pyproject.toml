@@ -1,0 +1,71 @@
+[project]
+name = "startup-analyzer"
+version = "0.1.0"
+description = "Cross-platform application startup time analyzer and optimizer"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = [
+    "typer[all]>=0.12.0",
+    "rich>=13.7.0",
+    "psutil>=5.9.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.3.0",
+    "pyyaml>=6.0.1",
+    "plotext>=5.2.0",
+    "jinja2>=3.1.0",
+]
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-cov>=5.0.0",
+    "pytest-mock>=3.14.0",
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+    "pre-commit>=3.7.0",
+]
+macos = [
+    "pyobjc-framework-Cocoa>=10.2",
+    "pyobjc-framework-Quartz>=10.2",
+]
+linux = [
+    "python-xlib>=0.33",
+]
+windows = [
+    "pywin32>=306",
+    "wmi>=1.5.1",
+]
+
+[project.scripts]
+startup-analyzer = "startup_analyzer.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+select = ["E", "F", "I", "UP", "B", "C4", "ANN", "T20", "PTH", "ERA", "RET", "SIM", "ARG"]
+ignore = ["ANN101", "ANN102", "ARG001", "ARG002", "T201", "T203", "PTH123", "ERA001", "SIM103"]
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/startup_analyzer"]

@@ -1,0 +1,72 @@
+{
+  "app": "Telegram",
+  "mode": "warm",
+  "measurements": [
+    {
+      "iteration": 1,
+      "success": true,
+      "timeline": {
+        "process_start": 585083.941486166,
+        "first_cpu_activity": null,
+        "main_window_visible": 585114.960592083,
+        "process_idle": 585114.960896625,
+        "time_to_first_cpu": null,
+        "time_to_window": 31.01910591707565,
+        "time_to_idle": 31.01941045897547
+      },
+      "resources": {
+        "peak_cpu_percent": 0.0,
+        "avg_cpu_percent": 0.0,
+        "peak_memory_rss": 0,
+        "avg_memory_rss": 0,
+        "peak_threads": 0,
+        "total_read_bytes": 0,
+        "total_write_bytes": 0
+      }
+    },
+    {
+      "iteration": 2,
+      "success": true,
+      "timeline": {
+        "process_start": 585116.96730725,
+        "first_cpu_activity": null,
+        "main_window_visible": 585147.990633708,
+        "process_idle": 585147.99114575,
+        "time_to_first_cpu": null,
+        "time_to_window": 31.023326457943767,
+        "time_to_idle": 31.023838500026613
+      },
+      "resources": {
+        "peak_cpu_percent": 0.0,
+        "avg_cpu_percent": 0.0,
+        "peak_memory_rss": 0,
+        "avg_memory_rss": 0,
+        "peak_threads": 0,
+        "total_read_bytes": 0,
+        "total_write_bytes": 0
+      }
+    },
+    {
+      "iteration": 3,
+      "success": true,
+      "timeline": {
+        "process_start": 585149.994845166,
+        "first_cpu_activity": null,
+        "main_window_visible": 585181.017646583,
+        "process_idle": 585181.017863708,
+        "time_to_first_cpu": null,
+        "time_to_window": 31.0228014170425,
+        "time_to_idle": 31.023018541978672
+      },
+      "resources": {
+        "peak_cpu_percent": 0.0,
+        "avg_cpu_percent": 0.0,
+        "peak_memory_rss": 0,
+        "avg_memory_rss": 0,
+        "peak_threads": 0,
+        "total_read_bytes": 0,
+        "total_write_bytes": 0
+      }
+    }
+  ]
+}

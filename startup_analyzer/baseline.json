@@ -1,0 +1,72 @@
+{
+  "app": "Google Chrome",
+  "mode": "warm",
+  "measurements": [
+    {
+      "iteration": 1,
+      "success": true,
+      "timeline": {
+        "process_start": 555665.273576916,
+        "first_cpu_activity": null,
+        "main_window_visible": 555696.282428625,
+        "process_idle": 555696.283173958,
+        "time_to_first_cpu": null,
+        "time_to_window": 31.008851709077135,
+        "time_to_idle": 31.009597041993402
+      },
+      "resources": {
+        "peak_cpu_percent": 0.0,
+        "avg_cpu_percent": 0.0,
+        "peak_memory_rss": 0,
+        "avg_memory_rss": 0,
+        "peak_threads": 0,
+        "total_read_bytes": 0,
+        "total_write_bytes": 0
+      }
+    },
+    {
+      "iteration": 2,
+      "success": true,
+      "timeline": {
+        "process_start": 555698.286143541,
+        "first_cpu_activity": null,
+        "main_window_visible": 555729.298652583,
+        "process_idle": 555729.299191083,
+        "time_to_first_cpu": null,
+        "time_to_window": 31.012509042047895,
+        "time_to_idle": 31.01304754195735
+      },
+      "resources": {
+        "peak_cpu_percent": 0.0,
+        "avg_cpu_percent": 0.0,
+        "peak_memory_rss": 0,
+        "avg_memory_rss": 0,
+        "peak_threads": 0,
+        "total_read_bytes": 0,
+        "total_write_bytes": 0
+      }
+    },
+    {
+      "iteration": 3,
+      "success": true,
+      "timeline": {
+        "process_start": 555731.301511083,
+        "first_cpu_activity": null,
+        "main_window_visible": 555762.32328,
+        "process_idle": 555762.323922041,
+        "time_to_first_cpu": null,
+        "time_to_window": 31.021768916980363,
+        "time_to_idle": 31.022410957957618
+      },
+      "resources": {
+        "peak_cpu_percent": 0.0,
+        "avg_cpu_percent": 0.0,
+        "peak_memory_rss": 0,
+        "avg_memory_rss": 0,
+        "peak_threads": 0,
+        "total_read_bytes": 0,
+        "total_write_bytes": 0
+      }
+    }
+  ]
+}
